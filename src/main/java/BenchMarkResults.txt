@@ -1,0 +1,75 @@
+"C:\Program Files\Java\jdk-11.0.6\bin\java.exe" -Xmx13g "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.3.3\lib\idea_rt.jar=55354:C:\Program Files\JetBrains\IntelliJ IDEA 2021.3.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\Alfredo\Downloads\gs-rest-service-main\EDA_TecnoCampus_FirstClass_Challenge\target\classes DataStructuresBenchMark
+
+--------------------
+
+Running test with 10 people
+Starting testFindPersonPerformance...
+findPersonInList: person located! Person{id=9, name='Paz', birthDate=2022-04-06}
+Time elapsed to find a person in the ArrayList: 40078800 nanos | 0.0400788 seconds
+findPersonInMap: person located! Person{id=9, name='Paz', birthDate=2022-04-06}
+Time elapsed to find a person in the HashMap: 369700 nanos | 3.697E-4 seconds
+
+--------------------
+
+Running test with 100 people
+Starting testFindPersonPerformance...
+findPersonInList: person located! Person{id=99, name='Paz', birthDate=2022-04-06}
+Time elapsed to find a person in the ArrayList: 152800 nanos | 1.528E-4 seconds
+findPersonInMap: person located! Person{id=99, name='Paz', birthDate=2022-04-06}
+Time elapsed to find a person in the HashMap: 78500 nanos | 7.85E-5 seconds
+
+--------------------
+
+Running test with 1000 people
+Starting testFindPersonPerformance...
+findPersonInList: person located! Person{id=999, name='Paz', birthDate=2022-04-06}
+Time elapsed to find a person in the ArrayList: 512600 nanos | 5.126E-4 seconds
+findPersonInMap: person located! Person{id=999, name='Paz', birthDate=2022-04-06}
+Time elapsed to find a person in the HashMap: 75400 nanos | 7.54E-5 seconds
+
+--------------------
+
+Running test with 10000 people
+Starting testFindPersonPerformance...
+findPersonInList: person located! Person{id=9999, name='Paz', birthDate=2022-04-06}
+Time elapsed to find a person in the ArrayList: 2205100 nanos | 0.0022051 seconds
+findPersonInMap: person located! Person{id=9999, name='Paz', birthDate=2022-04-06}
+Time elapsed to find a person in the HashMap: 78400 nanos | 7.84E-5 seconds
+
+--------------------
+
+Running test with 100000 people
+Starting testFindPersonPerformance...
+findPersonInList: person located! Person{id=99999, name='Paz', birthDate=2022-04-06}
+Time elapsed to find a person in the ArrayList: 12484000 nanos | 0.012484 seconds
+findPersonInMap: person located! Person{id=99999, name='Paz', birthDate=2022-04-06}
+Time elapsed to find a person in the HashMap: 113600 nanos | 1.136E-4 seconds
+
+--------------------
+
+Running test with 1000000 people
+Starting testFindPersonPerformance...
+findPersonInList: person located! Person{id=999999, name='Paz', birthDate=2022-04-06}
+Time elapsed to find a person in the ArrayList: 13791900 nanos | 0.0137919 seconds
+findPersonInMap: person located! Person{id=999999, name='Paz', birthDate=2022-04-06}
+Time elapsed to find a person in the HashMap: 48700 nanos | 4.87E-5 seconds
+
+--------------------
+
+Running test with 10000000 people
+Starting testFindPersonPerformance...
+findPersonInList: person located! Person{id=9999999, name='Paz', birthDate=2022-04-06}
+Time elapsed to find a person in the ArrayList: 62412500 nanos | 0.0624125 seconds
+findPersonInMap: person located! Person{id=9999999, name='Paz', birthDate=2022-04-06}
+Time elapsed to find a person in the HashMap: 51200 nanos | 5.12E-5 seconds
+
+--------------------
+
+Running test with 100000000 people
+Starting testFindPersonPerformance...
+findPersonInList: person located! Person{id=99999999, name='Paz', birthDate=2022-04-06}
+Time elapsed to find a person in the ArrayList: 2122608700 nanos | 2.1226087 seconds
+findPersonInMap: person located! Person{id=99999999, name='Paz', birthDate=2022-04-06}
+Time elapsed to find a person in the HashMap: 305100 nanos | 3.051E-4 seconds
+
+Process finished with exit code 0
