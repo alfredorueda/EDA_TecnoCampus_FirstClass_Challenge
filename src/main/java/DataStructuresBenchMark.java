@@ -1,15 +1,20 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 
 
 public class DataStructuresBenchMark {
+
+    private static List<Stat> stats;
 
     // La octava iteración provoca este error en mi entorno de JVM :)
     // Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
     public static final int NUM_ITERATIONS = 8;
 
     public static void main(String[] args) {
+
+        stats = new ArrayList<>();
 
         int numPeople = 1;
 
@@ -58,6 +63,8 @@ public class DataStructuresBenchMark {
         // 1 second = 1_000_000_000 nano seconds
         double elapsedTimeInSecond = (double) elapsedNanos / 1_000_000_000;
 
+        updateStat(peopleList, elapsedNanos);
+
         System.out.println("Time elapsed to find a person in the ArrayList: "
                 + elapsedNanos + " nanos | " + elapsedTimeInSecond + " seconds");
 
@@ -72,6 +79,11 @@ public class DataStructuresBenchMark {
 
         System.out.println("Time elapsed to find a person in the HashMap: "
                 + elapsedNanos + " nanos | " + elapsedTimeInSecond + " seconds");
+    }
+
+    private static void updateStat(ArrayList<Person> peopleList, long elapsedNanos) {
+        Stat stat = new Stat("ArrayList", "lookup", peopleList.size(), elapsedNanos);
+        stats.add(stat);
     }
 
     private static void findPersonInMap(Person personToFind, HashMap<Long, Person> peopleMap) {
